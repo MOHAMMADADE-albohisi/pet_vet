@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pet_vet/widgets/home_cats_widget/Spaecies.dart';
 
 // ignore: camel_case_types
 class home_cate_screen extends StatefulWidget {
@@ -35,14 +36,12 @@ class _home_cate_screenState extends State<home_cate_screen>
         title: Text(
           'Cats',
           style: GoogleFonts.montserrat(
-              fontSize: 24,
-              fontWeight: FontWeight.w500,
-              color: Colors.black),
+              fontSize: 24, fontWeight: FontWeight.w500, color: Colors.black),
         ),
         centerTitle: true,
         leading: IconButton(
           onPressed: () {
-            Navigator.pushReplacementNamed(context, '/credit_screen');
+            Navigator.popAndPushNamed(context, '/welcom_screen');
           },
           icon: const Icon(
             Icons.arrow_back_ios,
@@ -62,8 +61,7 @@ class _home_cate_screenState extends State<home_cate_screen>
               child: TabBar(
                 indicator: const BoxDecoration(
                   color: Colors.orange,
-                  borderRadius:
-                      const BorderRadius.all(const Radius.circular(5)),
+                  borderRadius: BorderRadius.all(Radius.circular(5)),
                 ),
                 controller: _mohammad,
                 labelColor: Colors.white,
@@ -79,29 +77,8 @@ class _home_cate_screenState extends State<home_cate_screen>
           Expanded(
             child: TabBarView(
               controller: _mohammad,
-              children: [
-                Container(
-                  color: Colors.grey,
-                  child: GridView.builder(
-                    shrinkWrap: true,
-                    scrollDirection: Axis.vertical,
-                    itemCount: 10,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 10,
-
-                      crossAxisSpacing: 10,
-                    ),
-                    itemBuilder: (context, index) {
-                      return Card(
-                        elevation: 10,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      );
-                    },
-                  ),
-                ),
+              children: const [
+                Species_cats_Widget(),
                 Text('food'),
                 Text('equipment'),
                 Text('consultation'),

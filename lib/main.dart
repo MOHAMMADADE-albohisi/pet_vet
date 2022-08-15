@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:pet_vet/screens/app/home_birds_screen.dart';
 import 'package:pet_vet/screens/app/home_cats_screen.dart';
+import 'package:pet_vet/screens/app/home_dog_screen.dart';
 import 'package:pet_vet/screens/app/welcom_screen.dart';
 import 'package:pet_vet/screens/auth/forget_screen.dart';
 import 'package:pet_vet/screens/auth/login_screen.dart';
@@ -19,7 +21,7 @@ class pet_vet extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/home_cate_screen',
+      initialRoute: '/linch_screen',
       routes: {
         '/linch_screen': (context) => const lunch_screens(),
         '/onbressd_screen': (context) => const onpresd(),
@@ -28,6 +30,8 @@ class pet_vet extends StatelessWidget {
         '/forget_screen': (context) => const forget_screen(),
         '/welcom_screen': (context) => const welcom_screen(),
         '/home_cate_screen': (context) => const home_cate_screen(),
+        '/home_DOG_screen': (context) => const home_dog_screen(),
+        '/home_birds_screen': (context) => const home_birds_screen(),
       },
     );
   }

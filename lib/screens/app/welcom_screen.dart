@@ -28,7 +28,6 @@ class _welcom_screenState extends State<welcom_screen> {
           ),
           ListView(
             children: [
-
               const SizedBox(height: 412),
               Container(
                 width: double.infinity,
@@ -66,7 +65,10 @@ class _welcom_screenState extends State<welcom_screen> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.popAndPushNamed(
+                                context, '/home_cate_screen');
+                          },
                           style: ElevatedButton.styleFrom(
                               primary: Colors.blue.shade400,
                               onPrimary: Colors.white,
@@ -82,7 +84,10 @@ class _welcom_screenState extends State<welcom_screen> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.popAndPushNamed(
+                                context, '/home_DOG_screen');
+                          },
                           style: ElevatedButton.styleFrom(
                               primary: Colors.blue.shade400,
                               onPrimary: Colors.white,
@@ -98,7 +103,10 @@ class _welcom_screenState extends State<welcom_screen> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.popAndPushNamed(
+                                context, '/home_birds_screen');
+                          },
                           style: ElevatedButton.styleFrom(
                               primary: Colors.blue.shade400,
                               onPrimary: Colors.white,
