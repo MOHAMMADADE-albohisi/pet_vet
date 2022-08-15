@@ -89,6 +89,7 @@ class _home_cate_screenState extends State<home_cate_screen>
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       mainAxisSpacing: 10,
+
                       crossAxisSpacing: 10,
                     ),
                     itemBuilder: (context, index) {
