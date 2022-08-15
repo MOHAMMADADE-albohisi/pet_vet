@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pet_vet/widgets/home_dog_widget/Spaecies.dart';
+import 'package:pet_vet/widgets/home_dog_widget/equipment.dart';
+import 'package:pet_vet/widgets/home_dog_widget/fode.dart';
+import 'package:pet_vet/widgets/memu_Widget.dart';
 
 // ignore: camel_case_types
 class home_dog_screen extends StatefulWidget {
@@ -31,24 +33,12 @@ class _home_dog_screenState extends State<home_dog_screen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        title: Text(
-          'Dogs',
-          style: GoogleFonts.montserrat(
-              fontSize: 24, fontWeight: FontWeight.w500, color: Colors.black),
-        ),
+        backgroundColor: Colors.orangeAccent.shade100,
+        title: Text('BET & VET'),
         centerTitle: true,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.popAndPushNamed(context, '/welcom_screen');
-          },
-          icon: const Icon(
-            Icons.arrow_back_ios,
-            color: Colors.black,
-          ),
-        ),
+
       ),
+      drawer: const memu_Widget(),
       body: Column(
         children: [
           Padding(
@@ -79,8 +69,8 @@ class _home_dog_screenState extends State<home_dog_screen>
               controller: _mohammad,
               children: const [
                 Species_dog_Widget(),
-                Text('food'),
-                Text('equipment'),
+                fodes_dogs_Widget(),
+                equipment_dogs_Widget(),
                 Text('consultation'),
               ],
             ),

@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pet_vet/widgets/memu_Widget.dart';
 
 // ignore: camel_case_types
 class welcom_screen extends StatefulWidget {
@@ -15,6 +16,12 @@ class _welcom_screenState extends State<welcom_screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.orangeAccent.shade100,
+        title: Text('BET & VET'),
+        centerTitle: true,
+      ),
+      drawer: memu_Widget(),
       body: Stack(
         children: [
           ImageFiltered(
@@ -28,7 +35,7 @@ class _welcom_screenState extends State<welcom_screen> {
           ),
           ListView(
             children: [
-              const SizedBox(height: 412),
+              const SizedBox(height: 350),
               Container(
                 width: double.infinity,
                 height: 400,
@@ -145,3 +152,4 @@ class _welcom_screenState extends State<welcom_screen> {
     );
   }
 }
+

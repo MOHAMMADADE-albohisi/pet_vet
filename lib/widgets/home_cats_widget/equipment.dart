@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
-class Species_cats_Widget extends StatelessWidget {
-  const Species_cats_Widget({
+class equipment_cats_Widget extends StatelessWidget {
+  const equipment_cats_Widget({
     Key? key,
   }) : super(key: key);
 
@@ -43,7 +43,7 @@ class Species_cats_Widget extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Image.asset(
-                          'images/image_9.png',
+                          'images/image_13.png',
                           width: double.infinity,
                           fit: BoxFit.cover,
                         ),
@@ -81,7 +81,7 @@ class Species_cats_Widget extends StatelessWidget {
                       child: ListView(
                         children: const [
                           Text(
-                            'القط الشيرازي أو القط الفارسي طويل الشعر أو القط الإيراني طويل الشعر ويعرف أيضا بـ، هي سلالة قطط ذات فرو طويل أصيلة المملكة المتحدة. ينتمي القط إلى عائلة السنوريات. وتتميز هذه السلالة بألوانها المتعددة. القط ذو حجم متوسط إلى كبير وهيئة مدورة ووجه ذو خطم قصير جدا.',
+                            'تصنف الطيور من الكائنات الحية الفقارية ذوات الدم الحار، وهي من الكائنات الحية الجميلة في شكلها، والتي تضفي للطبيعة جمالاً مميزاً، فالبعض منها لها أشكال جميلة تصدر ألحان جميلة عند تغريده',
                           ),
                         ],
                       )),
