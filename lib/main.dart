@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:pet_vet/screens/app/admins/add_screen.dart';
+import 'package:pet_vet/screens/app/admins/admin_screen.dart';
+import 'package:pet_vet/screens/app/admins/delete_item_screen.dart';
 import 'package:pet_vet/screens/app/home_birds_screen.dart';
 import 'package:pet_vet/screens/app/home_cats_screen.dart';
 import 'package:pet_vet/screens/app/home_dog_screen.dart';
@@ -32,6 +35,9 @@ class pet_vet extends StatelessWidget {
         '/home_cate_screen': (context) => const home_cate_screen(),
         '/home_DOG_screen': (context) => const home_dog_screen(),
         '/home_birds_screen': (context) => const home_birds_screen(),
+        '/admin_screen': (context) => const admin_screen(),
+        '/add_screen': (context) => const add_screen(),
+        '/deleteitem_screen': (context) => const deleteitem_screen(),
       },
     );
   }

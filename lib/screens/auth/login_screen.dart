@@ -171,7 +171,7 @@ class _login_screenState extends State<login_screen> {
             ),
             const SizedBox(height: 10),
             IconButton(onPressed: (){
-              Navigator.popAndPushNamed(context, '/forget_screen');
+              Navigator.pushNamed(context, '/forget_screen');
             } , icon: Text('Forget Password ?',style: GoogleFonts.montserrat(
               fontSize: 12,
               fontWeight: FontWeight.w400,

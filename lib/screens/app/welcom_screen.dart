@@ -129,7 +129,9 @@ class _welcom_screenState extends State<welcom_screen> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.popAndPushNamed(context, '/admin_screen');
+                          },
                           style: ElevatedButton.styleFrom(
                               primary: const Color(0xFFFEC260),
                               onPrimary: Colors.white,
@@ -152,4 +154,3 @@ class _welcom_screenState extends State<welcom_screen> {
     );
   }
 }
-

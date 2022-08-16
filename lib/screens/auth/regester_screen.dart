@@ -41,7 +41,7 @@ class _regester_screenState extends State<regester_screen> {
   }
 
   void createnewacountclick() {
-    Navigator.popAndPushNamed(context, '/login_screen');
+    Navigator.pushNamed(context, '/login_screen');
   }
 
   @override
