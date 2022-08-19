@@ -365,6 +365,6 @@ class _regester_screenState extends State<regester_screen> {
   }
 
   void login() {
-    // Navigator.popAndPushNamed(context, '/');
+    Navigator.pushNamed(context, '/welcom_screen');
   }
 }
