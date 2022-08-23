@@ -317,6 +317,11 @@ class _login_screenState extends State<login_screen> {
   }
 
   void login() {
-    Navigator.popAndPushNamed(context, '/welcom_screen');
+    Navigator.pushNamed(context, '/welcom_screen');
   }
+
+
+
+
+
 }

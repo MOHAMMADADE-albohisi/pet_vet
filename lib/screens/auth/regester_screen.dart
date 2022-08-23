@@ -59,7 +59,7 @@ class _regester_screenState extends State<regester_screen> {
               child: Row(
                 children: [
                   Text(
-                    'Login whit Acount',
+                    'Register whit Acount',
                     style: GoogleFonts.montserrat(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -365,6 +365,59 @@ class _regester_screenState extends State<regester_screen> {
   }
 
   void login() {
-    Navigator.pushNamed(context, '/welcom_screen');
+    _confirmeLogoute();
   }
+
+
+  void _confirmeLogoute() async {
+    bool? test = await showDialog<bool>(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text(
+            'التحقق من بريدك الالكتروني',
+            style: GoogleFonts.cairo(
+              fontSize: 16,
+              color: Colors.black,
+            ),
+          ),
+          content: Text(
+            'لتأكيد بريدك الالكتروني اضغط على راسال ومن ثم قم بتسجيل الدخوب',
+            style: GoogleFonts.cairo(
+              fontSize: 13,
+              color: Colors.black45,
+            ),
+          ),
+          actions: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 50,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.grey,
+                  ),
+                  child: TextButton(onPressed: (){
+                    Navigator.pushNamed(context, '/login_screen');
+                  }, child: Text('إرسال',style: GoogleFonts.cairo(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                    color: Colors.black,
+
+                  ),)),
+                ),
+              ],
+            )
+          ],
+        );
+      },
+    );
+    if (test ?? false) {
+      // ignore: use_build_context_synchronously
+      Navigator.pushReplacementNamed(context, '/welcom_screen');
+    }
+  }
+
 }
