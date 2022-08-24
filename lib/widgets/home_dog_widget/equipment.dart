@@ -41,7 +41,7 @@ class equipment_dogs_Widget extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: Image.asset(
-                            'images/image_27.png',
+                            'images/image_41.png',
                             width: double.infinity,
                             fit: BoxFit.cover,
                           ),
@@ -79,7 +79,7 @@ class equipment_dogs_Widget extends StatelessWidget {
                         child: ListView(
                           children: const [
                             Text(
-                              'تصنف الطيور من الكائنات الحية الفقارية ذوات الدم الحار، وهي من الكائنات الحية الجميلة في شكلها، والتي تضفي للطبيعة جمالاً مميزاً، فالبعض منها لها أشكال جميلة تصدر ألحان جميلة عند تغريده',
+                              'طوق كلب بالون الزهري  للمشي  يتوفر منه جميع الاوان وجميع الاحجام للكلاب الكبيره والصغير',
                             ),
                           ],
                         )),
@@ -157,7 +157,7 @@ class equipment_dogs_Widget extends StatelessWidget {
                         child: ListView(
                           children: const [
                             Text(
-                              'تصنف الطيور من الكائنات الحية الفقارية ذوات الدم الحار، وهي من الكائنات الحية الجميلة في شكلها، والتي تضفي للطبيعة جمالاً مميزاً، فالبعض منها لها أشكال جميلة تصدر ألحان جميلة عند تغريده',
+                              'لترقية الحيوانات الأليفة كرسي متحرك المشي عربة المشي سكوتر كرسي متحرك ضعيف مشلول للمعاقين هند الساق يحتوي على عجلة الكلب الخلفي متحرك',
                             ),
                           ],
                         )),

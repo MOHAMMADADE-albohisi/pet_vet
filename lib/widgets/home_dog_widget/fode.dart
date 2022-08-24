@@ -79,7 +79,7 @@ class fodes_dogs_Widget extends StatelessWidget {
                         child: ListView(
                           children: const [
                             Text(
-                              'طعام TASTY للكلاب هو غذاء جاف للحيوانات الأليفة ومطوّر بعناية وبسعر يناسب ميزانية كل أصحاب الحيوانات الذين يريدون توفير أفضل تغذية ممكنة لحيواناتهم الاليفة.',
+                              'منتج سيمبا كروشيه بالدجاج هو غذاء كامل للكلاب من جميع السلالات المخصب بفيتامينات A-D3-E التي تعزز صحة ورفاهية الحيوان.',
                             ),
                           ],
                         )),
@@ -88,7 +88,7 @@ class fodes_dogs_Widget extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Container(
@@ -166,7 +166,7 @@ class fodes_dogs_Widget extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Container(
