@@ -25,7 +25,7 @@ class pet_vet extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/cart_screen',
+      initialRoute: '/linch_screen',
       routes: {
         '/linch_screen': (context) => const lunch_screens(),
         '/onbressd_screen': (context) => const onpresd(),
