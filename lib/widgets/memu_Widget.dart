@@ -43,7 +43,7 @@ class _memu_WidgetState extends State<memu_Widget> {
             onTap: () {
               Navigator.pop(context);
               Future.delayed(const Duration(milliseconds: 250), () {
-                Navigator.pushNamed(context, '/welcom_screen');
+                Navigator.pushNamed(context, '/cart_screen');
               });
             },
             leading: const Icon(Icons.shopping_cart_outlined),

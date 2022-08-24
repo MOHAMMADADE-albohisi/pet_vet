@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pet_vet/screens/app/admins/add_screen.dart';
 import 'package:pet_vet/screens/app/admins/admin_screen.dart';
 import 'package:pet_vet/screens/app/admins/delete_item_screen.dart';
+import 'package:pet_vet/screens/app/cart_screen.dart';
 import 'package:pet_vet/screens/app/home_birds_screen.dart';
 import 'package:pet_vet/screens/app/home_cats_screen.dart';
 import 'package:pet_vet/screens/app/home_dog_screen.dart';
@@ -24,7 +25,7 @@ class pet_vet extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/linch_screen',
+      initialRoute: '/cart_screen',
       routes: {
         '/linch_screen': (context) => const lunch_screens(),
         '/onbressd_screen': (context) => const onpresd(),
@@ -38,6 +39,7 @@ class pet_vet extends StatelessWidget {
         '/admin_screen': (context) => const admin_screen(),
         '/add_screen': (context) => const add_screen(),
         '/deleteitem_screen': (context) => const deleteitem_screen(),
+        '/cart_screen': (context) => const cart_screen(),
       },
     );
   }
